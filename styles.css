@@ -45,22 +45,48 @@ a {
 .header {
     background-color: #1a3c40;
     color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px 20px;
+    text-align: right;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1.5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     position: fixed;
-    top: -60px; /* Initially hide the header above the viewport */
+    top: -100px; /* Initially hide the header above the viewport */
     width: 100%;
     z-index: 100;
     transition: top 0.3s ease;
 }
 
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Adjust to fit the image size */
+    height: 60px; /* Adjust to fit the image size */
+    background-color: transparent; /* No background to display image only */
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#backToTop img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Makes it circular */
+}
+
+#backToTop:hover {
+    transform: scale(1.3); /* Slightly larger on hover */
+}
+
+
+
 body:hover .header,
 .header:hover {
-    top: 0; /* Slide down when hovering at the top or over the header */
+    top: 0; /* Slide down when hovering at the top or over the header*/
 }
 
 /* Header Links */
@@ -89,7 +115,7 @@ body:hover .header,
 
 /* Hero Section */
 .hero {
-    background: url('./wallpaper.jpg') no-repeat center center fixed;
+    background: url('./images/wallpaper.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 60vh; /* Adjust this to balance the space */
     padding: 120px 50px;
