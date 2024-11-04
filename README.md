@@ -36,4 +36,5 @@ Special thanks to all contributors, and to pet lovers everywhere who inspire us 
 ---
 
 <br>
+
 *PetStore Web App – Because your pet store deserves to go digital with style and ease. 🐾*
