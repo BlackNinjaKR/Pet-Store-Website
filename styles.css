@@ -1,0 +1,330 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Little Paws';
+    src: url('fonts/little_paws.ttf') format('truetype'); /* Adjust the path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #f7f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Apply Baloo to specific text elements */
+.header nav a,
+.hero p,
+.about p,
+.product-card p,
+.testimonial-card p,
+.newsletter p {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Little Paws', sans-serif;
+    color: #2a5a67;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background-color: #1a3c40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: -60px; /* Initially hide the header above the viewport */
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+
+body:hover .header,
+.header:hover {
+    top: 0; /* Slide down when hovering at the top or over the header */
+}
+
+/* Header Links */
+.header nav a {
+    color: #ffdd57;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.header nav a:hover {
+    color: #ffcc00;
+    transition: color 0.3s;
+}
+
+/*Dashboard section*/
+.dashboard {
+    display: none;
+    /* Your existing dashboard styling */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Add any other styles needed */
+}
+
+/* Hero Section */
+.hero {
+    background: url('./wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 60vh; /* Adjust this to balance the space */
+    padding: 120px 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    top: 50%; /* Start from the vertical center */
+    transform: translateY(20px); /* Offset from center - adjust value as needed */
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero .cta-button {
+    background-color: #ffdd57;
+    color: #1a3c40;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffd966;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    font-style: italic;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 60px 20px;
+    background-color: #f0f7f9;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card p {
+    color: #777;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.product-card .price {
+    color: #2b8b8d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #e0eef1;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.testimonial-card .author {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2b8b8d;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 60px 20px;
+    background-color: #1a3c40;
+    color: #ffffff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.newsletter input[type="email"] {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    width: 60%;
+    max-width: 300px;
+    margin-right: 10px;
+    font-size: 1em;
+    outline: none;
+    font-style: italic;
+}
+
+.newsletter button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #ffdd57;
+    color: #1a3c40;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #ffd966;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a img {
+    width: 20px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.footer a img:hover {
+    transform: scale(1.2);
+}
