@@ -18,7 +18,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <br>
 
 ## 🙌 Acknowledgments
-A special thanks to Swarnim Sharma for providing me with this project and inspiring its development.
+A special thanks to [Swarnim Sharma](https://www.linkedin.com/in/swarnim-sharma/) for providing me with this project and inspiring its development.
 
 ---
 
