@@ -18,7 +18,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <br>
 
 ## 🙌 Acknowledgments
-Special thanks to all contributors, and to pet lovers everywhere who inspire us to make pet care simpler and more accessible.
+A special thanks to Swarnim Sharma for providing me with this project and inspiring its development.
 
 ---
 
