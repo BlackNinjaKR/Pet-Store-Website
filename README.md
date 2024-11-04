@@ -1,5 +1,5 @@
 # 🐾 PetStore Web App 🐾
-*Your one-stop digital solution for managing all pet store operations.*
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans&weight=100&size=14&duration=2000&pause=1000&color=F7F7F7&vCenter=true&width=600&lines=Your+one-stop+digital+solution+for+managing+all+pet+store+operations.)
 
 ## 🌟 Overview
 Welcome to the PetStore Web App, a powerful, modern web application designed to simplify and streamline your pet store management. From managing your inventory of adorable pets, quality pet supplies, and essential services, to handling customer orders and tracking sales—all in one intuitive platform. This full-stack application enables pet store owners to focus on what they love: serving pets and their humans with the best products and services.
