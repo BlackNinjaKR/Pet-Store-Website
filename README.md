@@ -6,6 +6,7 @@ Welcome to PetStore Web App, a personal project designed to create an intuitive 
 ## 🌟 Overview
 This is a front-end prototype for a pet store web app, aimed at offering a smooth and enjoyable interface for pet store customers. Users can explore available pets, browse through supplies and services, and manage their shopping cart—all in a visually appealing and straightforward layout.  
 Find a working demo [here](https://pet-store-website-demo.vercel.app/).
+
 ---
 
 <br>
